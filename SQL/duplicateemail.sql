@@ -1,2 +1,4 @@
 select email
-from person having count(email)>1;
+from person 
+group by email  
+  having count(email)>1;
